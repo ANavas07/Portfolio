@@ -1,0 +1,25 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Actualmente...",
+        title: "Pasante Desarrollo — Empresa Eléctrica Ambato Regional Centro Norte S.A.",
+        description:
+            "Actualmente soy pasante en el área de desarrollo del departamento de planificación de la empresa. Me enfoco en crear nuevas soluciones, dar mantenimiento y monitorear el correcto funcionamiento de las aplicaciones. Estoy aplicando poco a poco una nueva cultura para la gestión y control de los desarrollos.",
+        link: "https://www.eeasa.com.ec/",
+    },
+    {
+        date: "Febrero 2024 - Agosto 2024",
+        title: "Pasante Programador Analista — Plasticaucho Industrial",
+        description:
+            "Realicé mantenimiento y desarrollo de aplicaciones, optimicé tiempos de respuesta implementando patrones de diseño, y mejoré la gestión de peticiones diseñando pools de conexiones. También desarrollé módulos en SAP ABAP y realicé ajustes en la base de datos para cumplir con nuevos requisitos operativos.",
+    }
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+    {EXPERIENCE.map((item) => (
+        <ExperienceItem {...item} />
+    ))}
+</ol>
