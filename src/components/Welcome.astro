@@ -7,27 +7,28 @@ import Mail from "../icons/MailIcon.astro";
 import Experience from "./Experience.astro";
 import SectionContainer from "./SectionContainer.astro";
 import BriefCase from "../icons/briefCaseIcon.astro";
-import Projects from "../icons/projectsIcon.astro";
+import ProjectsIcon from "../icons/projectsIcon.astro";
+import Projects from "./Projects.astro";
 ---
 
 <main class="px-4">
     <SectionContainer class="py-44 pb-27">
         <h1 class="text-white text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-            Hey, Soy Ariel Navas
+            Hola!, Soy Ariel Navas
             <a
                 href="https://ec.linkedin.com/in/navasariel"
                 target="_blank"
                 class="flex justify-center items-center"
-                ><Badge>Disponible para trabajar</Badge></a
+                ><Badge>Disponible</Badge></a
             >
         </h1>
-        <h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
-            <span>1 año de experiencia.</span>
-            <span class="text-yellow-200/90 opacity-80"
+        <h2 class="text-xl lg:text-2xl  text-wrap max-w-[700px]">
+            <span>+1 año de experiencia.</span>
+            <span class="text-yellow-200/90 opacity-100"
                 >Desarrollador FullStack.</span
             >
-            <span class="text-red-100/90">De Ambato, Ecuador 🏁.</span>
-            <span class="opacity-85">
+            <span class="text-blue-400">De Ambato, Ecuador 🚀. </span>
+            <span>
                 Especializado en crear soluciones unicas
             </span>
         </h2>
@@ -46,7 +47,7 @@ import Projects from "../icons/projectsIcon.astro";
             </SocialPill>
         </nav>
     </SectionContainer>
-    <SectionContainer id="experiencia">
+    <SectionContainer id="experiencia" class="pb-20">
         <h2 class="text-2xl font-bold mb-10 flex gap-x-3 items-center">
             
             <BriefCase class="size-7" />
@@ -56,9 +57,9 @@ import Projects from "../icons/projectsIcon.astro";
     </SectionContainer>
     <SectionContainer id="experiencia">
         <h2 class="text-2xl font-bold mb-10 flex gap-x-3 items-center">
-            <Projects class="size-7" />
+            <ProjectsIcon class="size-7" />
             Proyectos
         </h2>
-        <Experience />
+        <Projects />
     </SectionContainer>
 </main>
