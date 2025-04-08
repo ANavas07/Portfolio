@@ -1,12 +1,19 @@
-<a
-    class="rounded-full border border-white/5 flex justify-center items-center
-gap-x-2 py-1 px-2 md:py-2 md:px-4
-text-xs md:text-base
-hover:scale-110 hover:bg-white/10 transition"
-    {...Astro.props}
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <!-- Slot sirve para pasar cosas como props en react -->
-    <slot />
-</a>
+<div class="flex items-center">
+    <span
+        class="relative inline-flex overflow-hidden rounded-full p-[1px] border-amber-50"
+    >
+        <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
+        ></span>
+        <a
+            class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-100
+        rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap
+        hover:scale-105 hover:bg-white/0.5 transition"
+            {...Astro.props}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <slot />
+        </a>
+    </span>
+</div>
